@@ -43,6 +43,8 @@ type ConfigSpec struct {
 	Debug bool `json:"debug,omitempty" yaml:"debug,omitempty"`
 	// StrictRangeCheck performs the 32-bit strict numeric range checks on numbers.
 	StrictRangeCheck bool `json:"strictRangeCheck,omitempty" yaml:"strictRangeCheck,omitempty"`
+	// Tag version for the git or oci source.
+	Tag string `json:"tag,omitempty" yaml:"tag,omitempty"`
 }
 
 // CredSpec defines authentication credentials for remote locations
