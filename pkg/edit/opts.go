@@ -92,6 +92,7 @@ func constructOptions(resourceList *yaml.RNode, config *api.ConfigSpec) (*option
 		opts.StrictRangeCheck = config.StrictRangeCheck
 		opts.Vendor = config.Vendor
 		opts.Arguments = config.Arguments
+		opts.Tag = config.Tag
 	}
 	opts.Arguments = append(opts.Arguments,
 		// resource_list
